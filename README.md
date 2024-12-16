@@ -17,3 +17,6 @@ If the result is not ready, it excludes the result field.
 
 *GET /shapes:* -
 Returns a list of all shape computations, including their input data and computed results (if available).
+
+2. **Database Integration:**
+Stores the requests (process_id and input data) and the results of computations in a database.
