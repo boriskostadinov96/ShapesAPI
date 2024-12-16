@@ -5,7 +5,7 @@ A shape calculation application developed using FastAPI
 This application is a backend API implemented in Python using FastAPI that allows users to calculate the area of geometric shapes asynchronously. It is designed to handle long-running computations efficiently by queuing tasks and providing immediate responses with a process_id that can be used to query the result later.
 
 ## Key Features:
-1. **Endpoints:**
+**Endpoints:**
 
 *POST /shapes:* -
 Accepts a JSON request to calculate the area of a shape with its parameters.
@@ -19,14 +19,14 @@ If the result is not ready, it excludes the result field.
 Returns a list of all shape computations, including their input data and computed results (if available).
 
 
-2. **Database Integration:**
+**Database Integration:**
 Stores the requests (process_id and input data) and the results of computations in a database.
 
 
-3. **Asynchronous Processing:**
+**Asynchronous Processing:**
 Simulates a long-running task by introducing a random delay (1–10 seconds) before returning the result.
 
-4. **Technology Stack:**
+**Technology Stack:**
 - FastAPI: For API development.
 
 - SQLite: For database storage.
