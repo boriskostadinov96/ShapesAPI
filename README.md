@@ -18,5 +18,19 @@ If the result is not ready, it excludes the result field.
 *GET /shapes:* -
 Returns a list of all shape computations, including their input data and computed results (if available).
 
+
 2. **Database Integration:**
 Stores the requests (process_id and input data) and the results of computations in a database.
+
+
+3. **Asynchronous Processing:**
+Simulates a long-running task by introducing a random delay (1–10 seconds) before returning the result.
+
+4. **Technology Stack:**
+- FastAPI: For API development.
+
+- SQLite: For database storage.
+
+- Alembic: For database migrations
+
+- Docker Compose: For containerized deployment.
